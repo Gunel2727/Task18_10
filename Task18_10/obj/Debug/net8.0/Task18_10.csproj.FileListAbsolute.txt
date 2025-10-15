@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\Task18_10\Task18_10\bin\Debug\net8.0\Task18_10.exe
+C:\Users\user\Desktop\Task18_10\Task18_10\bin\Debug\net8.0\Task18_10.deps.json
+C:\Users\user\Desktop\Task18_10\Task18_10\bin\Debug\net8.0\Task18_10.runtimeconfig.json
+C:\Users\user\Desktop\Task18_10\Task18_10\bin\Debug\net8.0\Task18_10.dll
+C:\Users\user\Desktop\Task18_10\Task18_10\bin\Debug\net8.0\Task18_10.pdb
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\Task18_10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\Task18_10.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\Task18_10.AssemblyInfo.cs
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\Task18_10.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\Task18_10.sourcelink.json
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\Task18_10.dll
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\refint\Task18_10.dll
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\Task18_10.pdb
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\Task18_10.genruntimeconfig.cache
+C:\Users\user\Desktop\Task18_10\Task18_10\obj\Debug\net8.0\ref\Task18_10.dll
