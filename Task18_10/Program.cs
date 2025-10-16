@@ -1,4 +1,6 @@
-﻿namespace Task18_10
+﻿using System.Collections.Immutable;
+
+namespace Task18_10
 {
     internal class Program
     {
@@ -45,6 +47,31 @@
             //int c = Convert.ToInt32(Console.ReadLine());
             //UcbucaqNovu(a, b, c);
 
+
+            //Task8
+            //string word=Console.ReadLine();
+            //OrtaHerf(word);
+
+
+            //Task9
+            //int number=Convert.ToInt32(Console.ReadLine());
+            //SadeReqemCemi(number);
+
+            //Task10
+            //int num=Convert.ToInt32(Console.ReadLine());
+            //BigNumber(num);
+
+
+            //Task11
+            //int number=Convert.ToInt32(Console.ReadLine());
+            //SortedOrNot(number);
+
+            //Task12
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //SameNumberOrNot(number);
+
+
+            //Task13
 
 
 
@@ -209,6 +236,114 @@
             }
             else
                 Console.WriteLine("Terefleri duzgun daxil edin");
+        }
+        public static void OrtaHerf(string word)
+        {
+            if (word.Length % 2 == 0)
+            {
+                Console.WriteLine($"{word[(word.Length / 2) - 1]} {word[word.Length / 2]}");
+            }
+            else
+                Console.WriteLine(word[word.Length / 2]);
+
+        }
+
+
+
+        public static void SadeReqemCemi(int number)
+        {
+            int digit = 0;
+            int sum = 0;
+            while(number>0)
+            {
+                digit = number % 10;
+                number /= 10;
+                int count = 0;
+                if(digit>=2)
+                {
+                    for (int i = 2; i * i <= digit; i++)
+                    {
+                        if (digit % i == 0)
+                        {
+                            count++;
+                            break;
+                        }
+                    }
+                    if (count == 0)
+                        sum += digit;
+                }
+                
+            }
+            Console.WriteLine(sum);
+
+        }
+
+
+        public static void BigNumber(int num)
+        {
+            int[] numbers = new int[3];
+            int i = 0;
+            while(num > 0)
+            {
+                numbers[i] = num % 10;
+                num /= 10;
+                i += 1;
+            }
+            Array.Sort(numbers);
+            int newnum = numbers[2] * 100 + numbers[1] * 10 + numbers[0];
+            Console.WriteLine(newnum);
+        }
+
+
+        public static void SortedOrNot(int number)
+        {
+
+            int count = 0;
+            int countsorted = 0;
+            while (number > 0)
+            {
+                int digit = number % 10;
+                count++;
+                number /= 10;
+                if (digit > number % 10)
+                {
+                    countsorted++;
+                }
+
+            }
+            if (count == countsorted)
+            {
+                Console.WriteLine("Artan siradir");
+            }
+            else
+                Console.WriteLine("Artan sira deyil");
+        }
+
+
+
+        public static void SameNumberOrNot(int number)
+        {
+            int count = 0;
+            int countsame = 0;
+            int sonreqem = number % 10;
+            while (number > 0)
+            {
+                int digit = number % 10;
+                count++;
+                if (digit == sonreqem)
+                {
+                    countsame++;
+                    sonreqem = digit;
+                }
+                number /= 10;
+
+            }
+            if (count == countsame)
+            {
+                Console.WriteLine("Butun reqemler eynidir");
+            }
+            else
+                Console.WriteLine("Ferqli reqemler var");
         }
     }
 }
