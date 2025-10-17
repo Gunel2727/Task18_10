@@ -70,8 +70,49 @@ namespace Task18_10
             //int number = Convert.ToInt32(Console.ReadLine());
             //SameNumberOrNot(number);
 
+            //Videodakilar
 
             //Task13
+            //PrintHello();
+
+
+            //Task14
+            //PrintNameAndSurname("Gunel", "Musazade");
+
+
+            //Task15
+            //int num1=Convert.ToInt32(Console.ReadLine());
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //SumTwoElements(num1,num2);
+
+            //Task16
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //int num3 = Convert.ToInt32(Console.ReadLine());
+            //SumThreeElements(num1, num2, num3);
+
+            //Task17
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //int b = Convert.ToInt32(Console.ReadLine());
+            //CompareTwoElements(a, b);
+
+            //Task18
+            //int[] nums = { 5, 9, 2, 4 };
+            //SumOfArrayElements(nums);
+
+            //Task19
+            //string word=Console.ReadLine();
+            //RemoveSpaceFromString(word);
+
+
+            //Task20
+            //int[] nums = { 1, 2, 3, 8 };
+            //int num=Convert.ToInt32(Console.ReadLine());
+            //AddELementToArray(nums, num);
+
+            //Task21
+            //PrintArrayElements(new string[] { "gunel", "musazade" });
+
 
 
 
@@ -345,5 +386,86 @@ namespace Task18_10
             else
                 Console.WriteLine("Ferqli reqemler var");
         }
+
+
+        public static void PrintHello()
+        {
+            Console.WriteLine("Hello World");
+        }
+
+        public static void PrintNameAndSurname(string name, string surname)
+        {
+            Console.WriteLine($"{name} {surname}");
+        }
+
+        public static void SumTwoElements(int num1,int num2)
+        {
+            Console.WriteLine(num1 + num2);
+        }
+
+
+        public static void SumThreeElements(int num1,int num2,int num3)
+        {
+            Console.WriteLine(num1 + num2 + num3);
+        }
+
+
+        public static void CompareTwoElements(int a ,int b)
+        {
+            if (a > b)
+                Console.WriteLine($"{a} boyukdur");
+            else if (a < b)
+                Console.WriteLine($"{b} boyukdur");
+            else
+                Console.WriteLine("beraberdirler");
+        }
+
+        public static void SumOfArrayElements(int[] nums)
+        {
+            int sum = 0;
+            foreach(int num in nums)
+                sum += num;
+            Console.WriteLine(sum);
+        }
+
+        public static void RemoveSpaceFromString(string word)
+        {
+            string newWord = "";
+            foreach(char l in word)
+            {
+                if(l!=' ')
+                {
+                    newWord += l;
+                }
+            }
+            Console.WriteLine(newWord);
+        }
+
+
+        public static void AddELementToArray(int[] nums,int num)
+        {
+            int[] NewNums = new int[nums.Length + 1];
+            for(int i=0;i<nums.Length;i++)
+            {
+                NewNums[i]=nums[i];
+            }
+            NewNums[NewNums.Length - 1] = num;
+            foreach(int i in NewNums)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        public static void PrintArrayElements(string[] words)
+        {
+            foreach(string word in words)
+            {
+                Console.WriteLine(word);
+            }
+        }
+
+        
+
+
     }
 }
